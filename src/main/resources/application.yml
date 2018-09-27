@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  redis:
+    host: redis.haohaoli.cn
+    port: 6399
+    database: 0
+    jedis:
+      pool:
+        max-active: 8
+        min-idle: 0
+        max-idle: 8
+  thymeleaf:
+    cache: false
+logging:
+  level:
+    cn.haohaoli.weather: debug
