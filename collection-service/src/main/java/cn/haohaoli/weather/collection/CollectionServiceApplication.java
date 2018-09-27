@@ -1,8 +1,13 @@
-package cn.haohaoli.weather.collectionservice;
+package cn.haohaoli.weather.collection;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
+/**
+ * @author liwenhao
+ */
+@EnableDiscoveryClient
 @SpringBootApplication
 public class CollectionServiceApplication {
 

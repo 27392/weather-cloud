@@ -1,4 +1,4 @@
-package cn.haohaoli.weather.collectionservice;
+package cn.haohaoli.weather.collection;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
