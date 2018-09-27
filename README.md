@@ -5,7 +5,13 @@
   该项目通过很简单的例子一步一步从一个单块架构慢慢改进成微服务架构是入门SpringCloud很好的案例
   
   天气API接口：http://wthrcdn.etouch.cn/weather_mini?citykey=101010100
-  
+
+### 服务列表
+
+   - **天气数据采集服务** `collection-service` 
+   - **天气数据API服务**  `data-service`
+   - **城市数据API服务**  `开发中`
+   - **天气预报服务**     `开发中`
 
 ### 项目分支
 
@@ -16,6 +22,7 @@
 
    - `springCloud`
    - `eureka`
+   - `redis`
    
 **开发中..............**
     
