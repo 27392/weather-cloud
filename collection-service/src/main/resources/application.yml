@@ -1,8 +1,2 @@
 server:
   port: 8677
-spring:
-  application:
-    name: collection-service
-logging:
-  level:
-    cn.haohaoli.weather.collection: debug

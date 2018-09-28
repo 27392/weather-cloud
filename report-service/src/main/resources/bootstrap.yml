@@ -1,12 +1,9 @@
 spring:
   application:
-    name: collection-service
+    name: report-service
   cloud:
     config:
       discovery:
         enabled: true
         service-id: core-config
       profile: dev
-logging:
-  level:
-    cn.haohaoli.weather.collection: debug
