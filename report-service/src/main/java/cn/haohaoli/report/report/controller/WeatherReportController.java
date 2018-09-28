@@ -1,6 +1,6 @@
 package cn.haohaoli.report.report.controller;
 
-import cn.haohaoli.report.report.client.CityClient;
+import cn.haohaoli.report.report.client.DataClient;
 import cn.haohaoli.report.report.service.WeatherReportService;
 import cn.haohaoli.report.report.vo.City;
 import cn.haohaoli.report.report.vo.WeatherDetails;
@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -26,12 +25,12 @@ public class WeatherReportController {
     private WeatherReportService weatherReportService;
 
     @Resource
-    private CityClient cityClient;
+    private DataClient dataClient;
 
     @GetMapping("/cityId/{cityId}")
     public ModelAndView byCityId(@PathVariable String cityId, Model model) throws Exception {
         WeatherDetails weatherDetails = weatherReportService.getDataByCityId(cityId);
-        List<City> listCity = cityClient.listCity();
+        List<City> listCity = dataClient.listCity();
         //页面设值
         model.addAttribute("cityId", cityId);
         model.addAttribute("cityList", listCity);

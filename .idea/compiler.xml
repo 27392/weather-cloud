@@ -11,6 +11,8 @@
       <module name="collection-service_test" target="1.8" />
       <module name="core-eureka_main" target="1.8" />
       <module name="core-eureka_test" target="1.8" />
+      <module name="core-zuul_main" target="1.8" />
+      <module name="core-zuul_test" target="1.8" />
       <module name="data-service_main" target="1.8" />
       <module name="data-service_test" target="1.8" />
       <module name="report-service_main" target="1.8" />

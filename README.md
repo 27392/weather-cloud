@@ -23,6 +23,8 @@
    - `springCloud`
    - `eureka`
    - `redis`
+   - `feign`
+   - `zuul`
    
 **开发中..............**
     
