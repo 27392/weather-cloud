@@ -1,6 +1,6 @@
 spring:
   application:
-    name: report-service
+    name: data-service
   cloud:
     config:
       discovery:
