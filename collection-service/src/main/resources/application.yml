@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8677
 spring:
   application:
     name: collection-service
@@ -12,7 +12,6 @@ spring:
         max-active: 8
         min-idle: 0
         max-idle: 8
-
 logging:
   level:
     cn.haohaoli.weather.collection: debug

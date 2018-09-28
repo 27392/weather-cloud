@@ -1,0 +1,11 @@
+server:
+  port: 8670
+spring:
+  application:
+    name: report-service
+  thymeleaf:
+    cache: false
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

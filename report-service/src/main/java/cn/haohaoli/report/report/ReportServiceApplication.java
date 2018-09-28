@@ -1,4 +1,4 @@
-package cn.haohaoli.weather.data;
+package cn.haohaoli.report.report;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,9 +9,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-public class DataServiceApplication {
+public class ReportServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DataServiceApplication.class, args);
+        SpringApplication.run(ReportServiceApplication.class, args);
     }
 }
