@@ -1,5 +1,6 @@
 package cn.haohaoli.weather.collection.job;
 
+import cn.haohaoli.weather.collection.client.CityClient;
 import cn.haohaoli.weather.collection.service.WeatherCollectionService;
 import cn.haohaoli.weather.collection.vo.City;
 import lombok.extern.slf4j.Slf4j;
@@ -8,7 +9,6 @@ import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,16 +21,15 @@ public class WeatherDataSyncJob implements Job {
     @Autowired
     private WeatherCollectionService weatherCollectionService;
 
+    @Autowired
+    private CityClient cityClient;
+
     @Override
     public void execute(JobExecutionContext context) throws JobExecutionException {
         log.info("Weather Data Sync Start");
         List<City> listCity = null;
         try {
-            //TODO 改为由城市数据API微服务来提供数据
-            listCity = new ArrayList<>();
-            City city = new City();
-            city.setCityCode("101040100");
-            listCity.add(city);
+            listCity = cityClient.listCity();
         } catch (Exception e) {
             log.error("Exception", e);
         }

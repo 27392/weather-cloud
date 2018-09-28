@@ -10,8 +10,8 @@
 
    - **天气数据采集服务** `collection-service` 
    - **天气数据API服务**  `data-service`
-   - **城市数据API服务**  `开发中`
-   - **天气预报服务**     `开发中`
+   - **城市数据API服务**  `city-service`
+   - **天气预报服务**     `repoer-service`
 
 ### 项目分支
 
