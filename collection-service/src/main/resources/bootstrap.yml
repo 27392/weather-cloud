@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: collection-service
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: core-config-repo
+      profile: dev
