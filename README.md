@@ -42,12 +42,8 @@
 ├── README.md               
 ```
 
-### 服务列表
-
-   - **天气数据采集服务** `collection-service` 
-   - **天气数据API服务**  `data-service`
-   - **城市数据API服务**  `city-service`
-   - **天气预报服务**     `repoer-service`
+## 注册中心
+![](https://github.com/27392/weather-cloud/blob/master/eureka.png)
 
 ### 项目分支
 
@@ -55,8 +51,7 @@
    - **single** 分支为单块架构
 
 ### 技术栈
-
-   - **开发环境**:
+ 
    - **微服务框架**  `springCloud`
    - **服务注册与发现** `eureka`
    - **缓存** `redis`
