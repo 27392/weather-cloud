@@ -1,6 +1,6 @@
-package cn.haohaoli.report.report.service;
+package cn.haohaoli.report.service;
 
-import cn.haohaoli.report.report.vo.WeatherDetails;
+import cn.haohaoli.report.vo.WeatherDetails;
 
 /**
  * @author liwenhao

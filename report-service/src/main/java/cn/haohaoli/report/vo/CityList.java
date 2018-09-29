@@ -1,4 +1,4 @@
-package cn.haohaoli.report.report.vo;
+package cn.haohaoli.report.vo;
 
 import lombok.Getter;
 import lombok.Setter;

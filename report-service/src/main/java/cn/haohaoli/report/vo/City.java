@@ -1,6 +1,8 @@
-package cn.haohaoli.report.report.vo;
+package cn.haohaoli.report.vo;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -10,6 +12,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @XmlRootElement(name = "d")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class City {

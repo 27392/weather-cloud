@@ -18,27 +18,32 @@
             >
             </option>
         </select>
-        <h1 th:text="${reportModel.report.city}"></h1>
-        <p>更新时间：<span th:text="${#dates.format(reportModel.report.updateTime, 'yyyy-MM-dd HH:mm:ss')}"></span></p>
-        <p>
-            空气质量指数：<span th:text="${reportModel.report.aqi}"></span>
-        </p>
-        <p>
-            当前温度：<span th:text="${reportModel.report.wendu}"></span>
-        </p>
-        <p>
-            温馨提示：<span th:text="${reportModel.report.ganmao}"></span>
-        </p>
-        <div class="row">
-            <div class="card" th:each="forecast : ${reportModel.report.forecast}">
-                <div class="card-body">
-                    <p class="card-text" th:text="${forecast.date}">日期</p>
-                    <p class="card-text" th:text="${forecast.high}">最高温度</p>
-                    <p class="card-text" th:text="${forecast.low}">最低温度</p>
-                    <p class="card-text" th:text="${forecast.type}">天气类型</p>
-                    <p class="card-text" th:text="${forecast.fx}">风向</p>
+        <div th:if="${reportModel.report} != null">
+            <h1 th:text="${reportModel.report.city}"></h1>
+            <p>更新时间：<span th:text="${#dates.format(reportModel.report.updateTime, 'yyyy-MM-dd HH:mm:ss')}"></span></p>
+            <p>
+                空气质量指数：<span th:text="${reportModel.report.aqi}"></span>
+            </p>
+            <p>
+                当前温度：<span th:text="${reportModel.report.wendu}"></span>
+            </p>
+            <p>
+                温馨提示：<span th:text="${reportModel.report.ganmao}"></span>
+            </p>
+            <div class="row">
+                <div class="card" th:each="forecast : ${reportModel.report.forecast}">
+                    <div class="card-body">
+                        <p class="card-text" th:text="${forecast.date}">日期</p>
+                        <p class="card-text" th:text="${forecast.high}">最高温度</p>
+                        <p class="card-text" th:text="${forecast.low}">最低温度</p>
+                        <p class="card-text" th:text="${forecast.type}">天气类型</p>
+                        <p class="card-text" th:text="${forecast.fx}">风向</p>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div th:if="${reportModel.report} == null">
+            <p>天气数据api服务暂不可用！</p>
         </div>
     </div>
     <script type="text/javascript" th:src="@{/js/weather/report.js}"></script>

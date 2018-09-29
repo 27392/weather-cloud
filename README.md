@@ -20,11 +20,12 @@
 
 ### 技术栈
 
-   - `springCloud`
-   - `eureka`
-   - `redis`
-   - `feign`
-   - `zuul`
+   - **微服务框架**  `springCloud`
+   - **服务注册与发现** `eureka`
+   - **缓存** `redis`
+   - **服务消费**   `feign`
+   - **网关** `zuul`
+   - **统一配置中心**`springcloud-config`
    
 **开发中..............**
     

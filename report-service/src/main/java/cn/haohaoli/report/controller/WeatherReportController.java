@@ -1,9 +1,9 @@
-package cn.haohaoli.report.report.controller;
+package cn.haohaoli.report.controller;
 
-import cn.haohaoli.report.report.client.DataClient;
-import cn.haohaoli.report.report.service.WeatherReportService;
-import cn.haohaoli.report.report.vo.City;
-import cn.haohaoli.report.report.vo.WeatherDetails;
+import cn.haohaoli.report.client.DataClient;
+import cn.haohaoli.report.service.WeatherReportService;
+import cn.haohaoli.report.vo.City;
+import cn.haohaoli.report.vo.WeatherDetails;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
@@ -37,6 +37,5 @@ public class WeatherReportController {
         model.addAttribute("report", weatherDetails);
         return new ModelAndView("weather/report", "reportModel", model);
     }
-
 
 }

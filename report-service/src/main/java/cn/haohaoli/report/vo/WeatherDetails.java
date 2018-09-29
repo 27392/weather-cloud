@@ -1,4 +1,4 @@
-package cn.haohaoli.report.report.vo;
+package cn.haohaoli.report.vo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;

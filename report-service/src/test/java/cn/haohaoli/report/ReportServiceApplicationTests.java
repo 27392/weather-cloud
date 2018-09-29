@@ -1,4 +1,4 @@
-package cn.haohaoli.report.report;
+package cn.haohaoli.report;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
