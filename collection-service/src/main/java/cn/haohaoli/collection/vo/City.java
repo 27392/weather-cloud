@@ -1,4 +1,4 @@
-package cn.haohaoli.weather.collection.vo;
+package cn.haohaoli.collection.vo;
 
 import lombok.Getter;
 import lombok.Setter;

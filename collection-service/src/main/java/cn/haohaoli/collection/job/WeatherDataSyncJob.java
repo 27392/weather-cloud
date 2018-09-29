@@ -1,8 +1,8 @@
-package cn.haohaoli.weather.collection.job;
+package cn.haohaoli.collection.job;
 
-import cn.haohaoli.weather.collection.client.CityClient;
-import cn.haohaoli.weather.collection.service.WeatherCollectionService;
-import cn.haohaoli.weather.collection.vo.City;
+import cn.haohaoli.collection.client.CityClient;
+import cn.haohaoli.collection.service.WeatherCollectionService;
+import cn.haohaoli.collection.vo.City;
 import lombok.extern.slf4j.Slf4j;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;

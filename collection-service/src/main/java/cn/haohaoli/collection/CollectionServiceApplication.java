@@ -1,4 +1,4 @@
-package cn.haohaoli.weather.collection;
+package cn.haohaoli.collection;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

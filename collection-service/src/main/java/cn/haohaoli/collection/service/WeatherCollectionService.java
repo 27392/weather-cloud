@@ -1,4 +1,4 @@
-package cn.haohaoli.weather.collection.service;
+package cn.haohaoli.collection.service;
 
 /**
  * @author liwenhao

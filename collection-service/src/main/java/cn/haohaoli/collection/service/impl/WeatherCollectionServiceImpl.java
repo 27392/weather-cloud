@@ -1,7 +1,7 @@
-package cn.haohaoli.weather.collection.service.impl;
+package cn.haohaoli.collection.service.impl;
 
-import cn.haohaoli.weather.collection.service.WeatherCollectionService;
-import cn.haohaoli.weather.collection.util.JsonUtil;
+import cn.haohaoli.collection.service.WeatherCollectionService;
+import cn.haohaoli.collection.util.JsonUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -10,7 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 /**

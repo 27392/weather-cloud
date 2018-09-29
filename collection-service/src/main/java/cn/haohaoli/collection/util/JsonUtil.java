@@ -1,4 +1,4 @@
-package cn.haohaoli.weather.collection.util;
+package cn.haohaoli.collection.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

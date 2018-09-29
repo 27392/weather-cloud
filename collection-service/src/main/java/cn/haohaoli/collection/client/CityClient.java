@@ -1,6 +1,6 @@
-package cn.haohaoli.weather.collection.client;
+package cn.haohaoli.collection.client;
 
-import cn.haohaoli.weather.collection.vo.City;
+import cn.haohaoli.collection.vo.City;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 

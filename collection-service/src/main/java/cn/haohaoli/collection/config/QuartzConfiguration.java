@@ -1,6 +1,6 @@
-package cn.haohaoli.weather.collection.config;
+package cn.haohaoli.collection.config;
 
-import cn.haohaoli.weather.collection.job.WeatherDataSyncJob;
+import cn.haohaoli.collection.job.WeatherDataSyncJob;
 import org.quartz.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
