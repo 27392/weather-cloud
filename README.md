@@ -5,6 +5,7 @@
   该项目通过天气数据API为数据来源，Redis为数据存储。由SpringBoot单块架构进阶为SpringCloud微服务架构
   
   城市数据API接口：http://mobile.weather.com.cn/js/citylist.xml
+  
   天气数据API接口：http://wthrcdn.etouch.cn/weather_mini?citykey=101040100 (例如重庆)
   
   
